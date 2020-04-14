@@ -15,9 +15,7 @@ namespace GrpcClient
             var channel = GrpcChannel.ForAddress("https://localhost:5001");
             var client = new Greeter.GreeterClient(channel);
 
-            var reply = await client.SayHelloAsync(input);
-
-
+             await client.SayHelloAsync(input);
 
           //  Console.WriteLine(reply.Message);
 
