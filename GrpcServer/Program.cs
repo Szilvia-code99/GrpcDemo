@@ -13,6 +13,7 @@ namespace GrpcServer
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
+          
         }
 
         // Additional configuration is required to successfully run gRPC on macOS.

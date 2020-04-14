@@ -17,18 +17,11 @@ namespace GrpcClient
 
             var reply = await client.SayHelloAsync(input);
 
-            Console.WriteLine(reply.Message);
 
-            //var channel = GrpcChannel.ForAddress("https://localhost:5001");
-            //var customerClient = new Customer.CustomerClient(channel);
 
-            //var clientRequested = new CustomerLookUpModel { UserId = 3 } ;
+          //  Console.WriteLine(reply.Message);
 
-            //var customer = await customerClient.GetCustomerInfoAsync(clientRequested);
-
-            //Console.WriteLine($"{customer.FirstName}{customer.LastName}");
-
-            Console.ReadLine();
+             Console.ReadLine();
         }
     }
 }
